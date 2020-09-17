@@ -1,4 +1,6 @@
 FROM golang
-COPY . /app
+RUN mkdir /app
+ADD . /app
 WORKDIR /app
-CMD ["go run first.go"]
+RUN go build -o first .
+CMD [""/app/first""]
