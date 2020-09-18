@@ -10,7 +10,7 @@ func handler(writer http.ResponseWriter, request *http.Request) {
 }
 
 func handlerHi(writer http.ResponseWriter, request *http.Request) {
-	fmt.Fprintf(writer, "Hello world")
+	fmt.Fprintf(writer, "Hi from GO")
 }
 
 func main(){
